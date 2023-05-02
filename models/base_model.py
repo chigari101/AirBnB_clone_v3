@@ -17,7 +17,6 @@ if models.storage_t == "db":
 else:
     Base = object
 
-
 class BaseModel:
     """The BaseModel class from which future classes will be derived"""
     if models.storage_t == "db":
@@ -67,5 +66,4 @@ class BaseModel:
 
     def delete(self):
         """delete the current instance from the storage"""
-        models.storage.delete(self)
-        
+        models.storage.delete(self)        
